@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DriveEase Car Rentals</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#" class="logo">Drive<span>Ease</span></a>
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
+      <div class="nav-links">
+        <a href="#cars">Cars</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="nav-cta">Book Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Premium rentals, simple booking</p>
+        <h1>Find the perfect car for your next trip.</h1>
+        <p class="hero-text">
+          Rent clean, reliable vehicles at fair daily rates. Choose from economy cars, SUVs,
+          luxury models, and vans with flexible pickup and drop-off options.
+        </p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn primary">Reserve a Car</a>
+          <a href="#cars" class="btn secondary">View Fleet</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Featured car rental deal">
+        <div class="car-visual">
+          <div class="car-roof"></div>
+          <div class="car-body"></div>
+          <div class="wheel left"></div>
+          <div class="wheel right"></div>
+        </div>
+        <div class="deal">
+          <span>Weekend Special</span>
+          <strong>$49/day</strong>
+          <p>Compact SUV · Unlimited miles · Free cancellation</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="booking-panel">
+      <form class="booking-form" id="bookingForm">
+        <label>
+          Pickup Location
+          <input type="text" placeholder="City or airport" required>
+        </label>
+        <label>
+          Pickup Date
+          <input type="date" required>
+        </label>
+        <label>
+          Return Date
+          <input type="date" required>
+        </label>
+        <label>
+          Vehicle Type
+          <select required>
+            <option value="">Select type</option>
+            <option>Economy</option>
+            <option>SUV</option>
+            <option>Luxury</option>
+            <option>Van</option>
+          </select>
+        </label>
+        <button type="submit">Search Cars</button>
+      </form>
+      <p id="formMessage" class="form-message" role="status"></p>
+    </section>
+
+    <section class="stats">
+      <div>
+        <strong>2,500+</strong>
+        <span>Happy customers</span>
+      </div>
+      <div>
+        <strong>120+</strong>
+        <span>Vehicles available</span>
+      </div>
+      <div>
+        <strong>24/7</strong>
+        <span>Roadside support</span>
+      </div>
+      <div>
+        <strong>4.9★</strong>
+        <span>Average rating</span>
+      </div>
+    </section>
+
+    <section id="cars" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Our fleet</p>
+        <h2>Choose a car that fits your journey.</h2>
+      </div>
+
+      <div class="car-grid">
+        <article class="car-card">
+          <div class="car-image economy"></div>
+          <div class="car-details">
+            <h3>Toyota Corolla</h3>
+            <p>Economy · 5 seats · 35 MPG</p>
+            <div class="car-footer">
+              <strong>$39/day</strong>
+              <a href="#booking">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card">
+          <div class="car-image suv"></div>
+          <div class="car-details">
+            <h3>Honda CR‑V</h3>
+            <p>SUV · 5 seats · Extra cargo</p>
+            <div class="car-footer">
+              <strong>$59/day</strong>
+              <a href="#booking">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card">
+          <div class="car-image luxury"></div>
+          <div class="car-details">
+            <h3>BMW 5 Series</h3>
+            <p>Luxury · Premium interior · Automatic</p>
+            <div class="car-footer">
+              <strong>$99/day</strong>
+              <a href="#booking">Book</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="how" class="section steps-section">
+      <div class="section-heading">
+        <p class="eyebrow">Easy process</p>
+        <h2>Rent in three simple steps.</h2>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span>1</span>
+          <h3>Search</h3>
+          <p>Pick your location, dates, and preferred vehicle type.</p>
+        </div>
+        <div class="step">
+          <span>2</span>
+          <h3>Reserve</h3>
+          <p>Choose a car, add protection options, and confirm your booking.</p>
+        </div>
+        <div class="step">
+          <span>3</span>
+          <h3>Drive</h3>
+          <p>Pick up your keys and enjoy the road with confidence.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section split">
+      <div>
+        <p class="eyebrow">Transparent pricing</p>
+        <h2>No hidden surprises.</h2>
+        <p>
+          Our rates include basic insurance, routine cleaning, and 24/7 support.
+          Upgrade any rental with child seats, GPS, premium insurance, or extra drivers.
+        </p>
+        <ul class="check-list">
+          <li>Free cancellation up to 24 hours before pickup</li>
+          <li>Unlimited mileage packages available</li>
+          <li>Weekly and monthly discounts</li>
+        </ul>
+      </div>
+      <div class="price-card">
+        <span>Starting from</span>
+        <strong>$39</strong>
+        <p>per day</p>
+        <a href="#booking" class="btn primary">Get a Quote</a>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="section-heading">
+        <p class="eyebrow">Customer reviews</p>
+        <h2>Drivers love DriveEase.</h2>
+      </div>
+      <div class="testimonial-grid">
+        <blockquote>
+          “The booking was fast and the car was spotless. I’ll definitely rent again.”
+          <cite>— Maya R.</cite>
+        </blockquote>
+        <blockquote>
+          “Great prices, friendly staff, and no confusing fees at pickup.”
+          <cite>— Jordan T.</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="cta-section">
+      <div>
+        <p class="eyebrow">Ready to roll?</p>
+        <h2>Book your next rental today.</h2>
+        <p>Call us at <a href="tel:+15551234567">(555) 123‑4567</a> or request availability online.</p>
+      </div>
+      <a href="#booking" class="btn primary">Start Booking</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 DriveEase Car Rentals. All rights reserved.</p>
+    <div>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#">Support</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
